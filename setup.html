@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup - Budget Approval System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Body styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Circle shapes */
+        .circle-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .circle1 { 
+            top: -50px; 
+            left: -50px; 
+            width: 150px; 
+            height: 150px; 
+            background-color: #3f5efb; 
+        }
+
+        .circle2 { 
+            top: 20%; 
+            right: 10%; 
+            width: 250px; 
+            height: 250px; 
+            background-color: #fc466b; 
+        }
+
+        .circle3 { 
+            top: 40%; 
+            left: 15%; 
+            width: 100px; 
+            height: 100px; 
+            background-color: #009688; 
+        }
+
+        .circle4 { 
+            top: 70%; 
+            right: 5%; 
+            width: 180px; 
+            height: 180px; 
+            background-color: #ffc107; 
+        }
+
+        .circle5 { 
+            top: 10%; 
+            right: 25%; 
+            width: 200px; 
+            height: 200px; 
+            background-color: #9966ff; 
+        }
+
+        .circle6 { 
+            top: 80%; 
+            left: 5%; 
+            width: 80px; 
+            height: 80px; 
+            background-color: #ff9f40; 
+        }
+
+        .circle7 { 
+            top: 60%; 
+            right: 20%; 
+            width: 120px; 
+            height: 120px; 
+            background-color: #4bc0c0; 
+        }
+
+        .circle8 { 
+            top: 90%; 
+            left: 10%; 
+            width: 90px; 
+            height: 90px; 
+            background-color: #36a2eb; 
+        }
+
+        .circle9 { 
+            top: 30%; 
+            left: 25%; 
+            width: 300px; 
+            height: 300px; 
+            background-color: #ff5722; 
+        }
+
+        .circle10 { 
+            top: 85%; 
+            right: 30%; 
+            width: 60px; 
+            height: 60px; 
+            background-color: #e91e63; 
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p.lead {
+            font-size: 1.25rem;
+            color: #6c757d;
+        }
+
+        .btn {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle-shapes">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="circle circle5"></div>
+        <div class="circle circle6"></div>
+        <div class="circle circle7"></div>
+        <div class="circle circle8"></div>
+        <div class="circle circle9"></div>
+        <div class="circle circle10"></div>
+    </div>
+    <div class="container text-center">
+        <h1 class="mt-5">Welcome to Stationery Management System</h1>
+        <p class="lead">Efficiently manage your stationery requests with ease.</p>
+        <div class="mt-4">
+            <button id="addRequestBtn" class="btn btn-primary btn-lg m-2">Add Request</button>
+            <button id="viewRequestsBtn" class="btn btn-primary btn-lg m-2">View Requests</button>
+            <button id="logoutBtn" class="btn btn-secondary btn-lg m-2">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
